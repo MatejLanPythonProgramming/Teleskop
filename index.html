@@ -10,18 +10,18 @@
 	<title>KeplerControllV1</title>
 </head>
 
-<body class="mainBG"  onmouseup="toggle(event)" onmousemove="test(event)" onmousedown="toggle(event)">
+<body class="mainBG">
 
 	<div class="ui sidebar inverted vertical menu">
   		 <div class="ui horizontal divider">
   		  Stars</div>
 
-  		 <a class="item">
+  		 <a class="item" onclick="followPlanet('Alpha Centauri A')">
    		 <i class="star icon"></i>
     	 Alpha Centauri A
   		 </a>
 
-  		 <a class="item">
+  		 <a class="item" onclick="followPlanet('Proxima Centauri')">
    		 <i class="star icon"></i>
     	 Proxima Centauri
   		 </a>
@@ -62,9 +62,9 @@
 		            <div class="detail">186</div>
 			    </div>
 
-			    <a class="ui huge label">
+			    <a class="ui huge label" onclick="toggleFollowMode()">
 			    	Follow mode:
-		            <div class="detail">Alpha Centauri A</div>
+		            <div id="followMode" class="detail">OFF</div>
 			    </a>
 			   <!-- Thats right-->
 		    	<a class="ui huge label right">
@@ -77,10 +77,11 @@
 		  			Settings
 				</a>
 		</div>
-
-		<div class="controller" id="controller"><i class="ui icon Circle Thin center"></i></div>
-
+        <div class="projection" onmouseup="toggleJoystick(event)" onmousemove="test(event)" onmousedown="toggleJoystick(event)">
+		    <div class="controller" id="controller"><i class="ui icon Circle Thin center"></i></div>
+        </div>
 	</div>
 
 </body>
 <script src="Js/controller.js"></script>
+<script src="Js/navbar.js"></script>
