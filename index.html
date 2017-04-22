@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="Css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/semantic.min.js"></script>
+
+<head>
+	<title>KeplerControllV1</title>
+</head>
+
+<body class="mainBG"  onmouseup="toggle(event)" onmousemove="test(event)" onmousedown="toggle(event)">
+
+	<div class="ui sidebar inverted vertical menu">
+  		 <div class="ui horizontal divider">
+  		  Stars</div>
+
+  		 <a class="item">
+   		 <i class="star icon"></i>
+    	 Alpha Centauri A
+  		 </a>
+
+  		 <a class="item">
+   		 <i class="star icon"></i>
+    	 Proxima Centauri
+  		 </a>
+
+  		 <a class="item">
+   		 <i class="star icon"></i>
+    	 Barnard's Star
+  		 </a>
+
+
+  		 <div class="ui horizontal divider">
+  		  Others</div>
+
+  		  <a class="item">
+   		 <i class="star icon"></i>
+    	 Moon
+  		 </a>
+
+  		 <a class="item">
+   		 <i class="star icon"></i>
+    	 Venus
+  		 </a>
+	</div>
+
+	<div class="dimmed pusher">
+		<div class="myNavbar">
+				<a class="ui huge label" onclick="$('.ui.sidebar').sidebar('toggle');">
+		  			<i class="star icon"></i> Top
+			    </a>
+
+				<div class="ui huge label">
+			    	X axis:
+		  			<div class="detail">276</div>
+			    </div>
+
+			    <div class="ui huge label">
+			    	Y axis:
+		            <div class="detail">186</div>
+			    </div>
+
+			    <a class="ui huge label">
+			    	Follow mode:
+		            <div class="detail">Alpha Centauri A</div>
+			    </a>
+			   <!-- Thats right-->
+		    	<a class="ui huge label right">
+		  			<i class="user icon"></i>
+		  			Admin
+				</a>
+
+				<a class="ui huge label right">
+		  			<i class="options icon"></i>
+		  			Settings
+				</a>
+		</div>
+
+		<div class="controller" id="controller"><i class="ui icon Circle Thin center"></i></div>
+
+	</div>
+
+</body>
+<script src="Js/controller.js"></script>

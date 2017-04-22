@@ -1,0 +1,69 @@
+:root{
+    --main-dark:#2e3136;
+    --main-darker:#24272b;
+    --main-lighter: #36393e;
+    --font: #ffffff;
+    --accent: #1976D2;
+}
+
+.mainBG{
+	position:relative;
+	color: var(--font);
+	background-color: var(--main-dark);
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.myNavbar{
+	color: var(--font);
+	background-color: var(--main-darker);
+}
+.ui.label{
+	color: var(--font);
+	background-color: var(--main-lighter);
+}
+
+.right{
+	float: right;
+	margin-right: 1%;
+}
+
+.left{
+	float: left;
+	margin-left: 1%;
+}
+
+.long{
+	width: 100%;
+}
+
+.ui.horizontal.divider{
+	color: var(--font);
+}
+
+.projection{
+	width: 100%;
+    height: calc(100% - 44px);
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+	background-color: var(--accent) ;
+
+}
+
+.controller{
+    visibility: hidden;
+	position: absolute;
+	font-size: 550%;
+	bottom: 10vh;
+	right: 10vw;
+}
+
+.center{
+    bottom: 0;
+    right: 0;
+}
