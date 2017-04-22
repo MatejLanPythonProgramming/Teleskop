@@ -5,7 +5,9 @@
     --font: #ffffff;
     --accent: #1976D2;
 }
-
+.zoom{
+zoom: 160%;
+}
 .mainBG{
 	position:relative;
 	color: var(--font);
@@ -47,9 +49,9 @@
 
 .projection{
 	width: 100%;
-    height: calc(100% - 44px);
+    height: calc(100% - 43px);
     position: absolute;
-    top: 44px;
+    top: 43px;
     bottom: 0;
 	background-color: var(--accent) ;
 

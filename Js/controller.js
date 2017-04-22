@@ -1,7 +1,7 @@
 var joystick = false;
 var circle = document.getElementById("controller");
 
-function test(event){
+function moveJoystick(event){
     if (joystick && !followMode){
         var x = event.clientX;
         var y = event.clientY;

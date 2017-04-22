@@ -7,9 +7,15 @@ function followPlanet(planet){
     }else{
         button.innerHTML = "OFF"
     }
-
 }
+
 function toggleFollowMode(){
     followMode = !followMode;
     followPlanet("ON")
+}
+
+function followCheck(){
+    if (followMode){
+        $('.ui.sidebar').sidebar('toggle');
+    }
 }

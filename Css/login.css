@@ -1,0 +1,29 @@
+:root{
+    --main-dark:#2e3136;
+    --main-darker:#24272b;
+    --main-lighter: #36393e;
+    --font: #ffffff;
+    --accent: #1976D2;
+}
+.zoom{
+zoom: 110%;
+}
+.mainBG{
+	position:relative;
+	color: var(--font);
+	background-color: var(--main-dark);
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.ui.card{
+	position:absolute;
+	left:50%;
+	top:20%;
+	margin:-100px 0 0 -150px;
+}

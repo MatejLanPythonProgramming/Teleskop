@@ -48,7 +48,7 @@
 
 	<div class="dimmed pusher">
 		<div class="myNavbar">
-				<a class="ui huge label" onclick="$('.ui.sidebar').sidebar('toggle');">
+				<a class="ui huge label" onclick="followCheck()">
 		  			<i class="star icon"></i> Top
 			    </a>
 
@@ -67,7 +67,7 @@
 		            <div id="followMode" class="detail">OFF</div>
 			    </a>
 			   <!-- Thats right-->
-		    	<a class="ui huge label right">
+		    	<a class="ui huge label right" onclick="$('.ui.basic.modal').modal('show');">
 		  			<i class="user icon"></i>
 		  			Admin
 				</a>
@@ -77,9 +77,29 @@
 		  			Settings
 				</a>
 		</div>
-        <div class="projection" onmouseup="toggleJoystick(event)" onmousemove="test(event)" onmousedown="toggleJoystick(event)">
+        <div class="projection" onmouseup="toggleJoystick(event)" onmousemove="moveJoystick(event)" onmousedown="toggleJoystick(event)">
 		    <div class="controller" id="controller"><i class="ui icon Circle Thin center"></i></div>
         </div>
+	</div>
+
+	<div class="ui basic modal">
+	  	<div class="ui icon header">
+		    <i class="Sign out icon"></i>
+		    Signing out?
+	  	</div>
+	  	<div class="content">
+	    	<p>You are signing out from administrator account and leaving the Kepler Controll unit. Have a nice time, Bye</p>
+	  	</div>
+	  	<div class="actions">
+		    <div class="ui red basic cancel inverted button">
+			     <i class="remove icon"></i>
+			     No
+		    </div>
+		    <a class="ui green ok inverted button" href="login.html">
+			     <i class="checkmark icon"></i>
+			     Yes
+		    </a>
+	  	</div>
 	</div>
 
 </body>
